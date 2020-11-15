@@ -1,0 +1,168 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <style>
+    h1{
+        color : darkslateblue;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    form{
+        color :darkblue;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    p{
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    </style>
+    <script>
+        function myFunction() {
+            var txtName1 = document.getElementById("txtName");
+            alert("Name:" + txtName1.value);
+            var txtNRIC = document.getElementById("txtNRIC");
+            alert("NRIC:" + txtNRIC.value)
+            var rbMale = document.getElementById("rbMale");
+            var rbFemale = document.getElementById("rbFemale");
+
+            if (rbMale.checked) {
+                alert("gender:" + rbMale.value);
+            }
+            if (rbFemale.checked) {
+                alert("gender:" + rbFemale.value);
+            }
+            var rbVegetarian = document.getElementById("rbVegetarian");
+            var rbNonVeg = document.getElementById("rbNonVeg");
+
+            if (rbVegetarian.checked) {
+                alert("food choice" + rbVegetarian.value);
+            }
+            if (rbNonVeg.checked) {
+                alert("food choice" +  + rbNonVeg.value);
+            }
+            var selRace1 = document.getElementById("selRace");
+            alert("race:" + selRace1.value);
+
+            var cbTnc1 = document.getElementById("cbTnc");
+            if (cbTnc1.checked) {
+                alert("Thank You for your agreemrnt");
+            }
+            else {
+                alert("Please tick the box");
+            }
+            var selFavBook1 = document.getElementById("selFavBook");
+            alert("Favourite Book Series:" + selFavBook1.value);
+        }     
+        console.display("hi")
+
+    </script>
+    <title> Login Form</title>
+</head>
+<body style="background-color:linen; font-family:Verdana;">
+    <h1>Book Club Meeting Application</h1>
+    <hr />
+    <p style="color:blue; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif"><b>Note: Please bring along a copy of your favourite book to the meeting for sorting into the respective groups according to favourite book series indicated in this form. Hope to see you in the upcoming meetings!</b></p>
+    <form>
+        <div>
+            <label id="lblName">Name:</label>
+            <input type="text" id="txtName" name="txtName" required />
+        </div><br />
+        <div>
+            <label id="lblNRIC">NRIC:</label>
+            <input type="text" id="txtNRIC" name="nric" required />
+        </div><br />
+        <div>
+            <label id="lblRace">Race:</label>
+            <select id="selRace">
+                <option value="Chinese">Chinese</option>
+                <option value="Malay">Malay</option>
+                <option value="Indian">Indian</option>
+                <option value="Others">Others</option>
+            </select>
+        </div><br />
+        <div>
+            <label id="lblGender">Gender:</label>
+            <input type="radio" id="rbMale" name="gender" value="male" />
+            <label id="lblMale">Male</label>
+            <input type="radio" id="rbFemale" name="gender" value="female" />
+            <label id="lblFemale">Female</label>
+        </div><br />
+        <div>
+            <label id="lblFoodChoice">Food Choice:</label>
+            <input type="radio" id="rbVegetarian" name="food choice" value="vegetarian" />
+            <label id="lblVegetarian">Vegetarian</label>
+            <input type="radio" id="rbNonVeg" name="food choice" value="non vegetarian" />
+            <label id="lblNonVeg">Non Vegetarian</label>
+        </div><br />
+        <div>
+            <label id="lblFavBook">Favourite book series:</label>
+            <select id="selFavBook">
+                <option value="Harry Potter">Harry Potter</option>
+                <option value="Alex Rider">Alex Rider</option>
+                <option value="Power of Five">Power of Five</option>
+            </select>
+        </div><br />
+        <p>Links to buy Harry Potter novels</p>
+        <table line="1" border="1">
+            <tr>
+                <td><a href="https://www.bookdepository.com/Harry-Potter-and-the-Philosopher-s-Stone/9781408855652" target="_blank"><i>Harry Potter and The Philosopher's Stone</i></a></td>
+                <td><a href="https://www.bookdepository.com/Harry-Potter-and-the-Chamber-of-Secrets/9781408855669" target="_blank"><i>Harry Potter and The Chamber Of Secrets</i></a></td>
+                <td><a href="https://www.bookdepository.com/Harry-Potter-and-the-Prisoner-of-Azkaban/9781408855676" target="_blank"><i>Harry Potter and The Prisoner of Azkaban</i></a></td>
+                <td><a href="https://www.bookdepository.com/Harry-Potter-and-the-Goblet-of-Fire/9781408855683" target="_blank"><i>Harry Potter and The Goblet Of Fire</i></a></td>
+                <td><a href="https://www.bookdepository.com/Harry-Potter-and-the-Order-of-the-Phoenix/9781408855690" target="_blank"><i>Harry Potter and The Order of the Phoenix</i></a></td>
+                <td><a href="https://www.bookdepository.com/Harry-Potter-and-the-Half-Blood-Prince/9781408855706" target="_blank"><i>Harry Potter and The Half Blood Prince</i></a></td>
+                <td><a href="https://www.bookdepository.com/Harry-Potter-and-the-Deathly-Hallows/9781408855713" target="_blank"><i>Harry Potter and The Deathly Hallows</i></a></td>
+                <td><a href="https://www.bookdepository.com/Harry-Potter-and-the-Cursed-Child---Parts-I---II/9780751565355" target="_blank"><i>Harry Potter and The Cursed Child</i></a></td>
+            </tr>
+        </table><br />
+                <div>
+                    <p>Links to buy Alex Rider novels</p>
+                    <table line="1" border="1">
+                        <tr>
+                            <td><a href="https://www.bookdepository.com/Stormbreaker-Anthony-Horowitz/9781406360196?ref=grid-view&qid=1602591266791&sr=1-1" target="_blank"><i>Alex Rider: Stormbreaker</i></a></td>
+                            <td><a href="https://www.bookdepository.com/Point-Blanc-Anthony-Horowitz/9781406360202" target="_blank"><i>Alex Rider: Point Blanc</i></a></td>
+                            <td><a href="https://www.bookdepository.com/Skeleton-Key-Anthony-Horowitz/9781406360219?ref=pd_detail_1_sims_b_p2p_1" target="_blank"><i>Alex Rider: Skeleton Key</i></a></td>
+                            <td><a href="https://www.bookdepository.com/Eagle-Strike-Anthony-Horowitz/9781406360226?ref=pd_detail_1_sims_b_p2p_1" target="_blank"><i>Alex Rider: Eagle Strike</i></a></td>
+                            <td><a href="https://www.bookdepository.com/Scorpia-Anthony-Horowitz/9781406360233?ref=pd_detail_1_sims_b_p2p_1" target="_blank"><i>Alex Rider: Scorpia</i></a></td>
+                            <td><a href="https://www.bookdepository.com/Ark-Angel-Anthony-Horowitz/9781406360240?ref=pd_detail_1_sims_b_p2p_1" target="_blank"><i>Alex Rider: Ark Angel</i></a></td>
+                            <td><a href="https://www.bookdepository.com/Snakehead-Anthony-Horowitz/9781406360257?ref=pd_detail_1_sims_b_p2p_1" target="_blank"><i>Alex Rider: Snakehead</i></a></td>
+                            <td><a href="https://www.bookdepository.com/Crocodile-Tears/9781406360264" target="_blank"><i>Alex Rider: Crocodile Tears</i></a></td>
+                            <td><a href="https://www.bookdepository.com/Scorpia-Rising/9781406360271" target="_blank"><i>Alex Rider: Scorpia Rising</i></a></td>
+                            <td><a href="https://www.bookdepository.com/Russian-Roulette/9781406360288" target="_blank"><i>Alex Rider: Russian Roulette</i></a></td>
+                            <td><a href="https://www.bookdepository.com/Never-Say-Die/9781406378672" target="_blank"><i>Alex Rider: Never Say Die</i></a></td>
+                            <td><a href="https://www.bookdepository.com/Secret-Weapon/9781406340174" target="_blank"><i>Alex Rider: Secret Weapon</i></a></td>
+                            <td><a href="https://www.bookdepository.com/Nightshade/9781406389296" target="_blank"><i>Alex Rider: Nightshade</i></a></td>
+
+                        </tr>
+                    </table><br />
+                    <p>Links to buy The Power of Five novels</p>
+                    <div>
+                        <table line="1" border="1">
+                            <tr>
+                                <td><a href="https://www.bookdepository.com/Power-Five-Ravens-Gate-Anthony-Horowitz/9781406338881?ref=grid-view&qid=1602673281213&sr=1-2" target="_blank"><i>The Power of Five:   Raven's Gate</i></a></td>
+                                <td><a href="https://www.bookdepository.com/Power-Five-Evil-Star-Anthony-Horowitz/9781406338867?ref=grid-view&qid=1602673586657&sr=1-4" target="_blank"><i>The Power of Five:    Evil Star</i></a></td>
+                                <td><a href="https://www.bookdepository.com/The-Power-of-Five--Nightrise/9781406338874" target="_blank"><i>The Power of Five:   Nightrise</i></a></td>
+                                <td><a href="https://www.bookdepository.com/Power-Five-Necropolis-Anthony-Horowitz/9781406338898?ref=grid-view&qid=1602673830928&sr=1-5" target="_blank"><i>The Power of Five:   Necropolis</i></a></td>
+                                <td><a href="https://www.bookdepository.com/Power-Five-Oblivion-Anthony-Horowitz/9781406327441?ref=grid-view&qid=1602673896167&sr=1-1" target="_blank"><i>The Power of Five:   Oblivion</i></a></td>
+
+                            </tr>
+                        </table>
+                    </div><br />
+                    <a href="https://www.lazada.sg/the-complete-harry-potter-collection-7-books-12077139.html" target="_blank"><img src="voldemort.jpg" width="270" height="200" /></a>
+                    <figcaption>Harry Potter Novels</figcaption>
+                    <a href="https://shop.scholastic.co.uk/products/Alex-Rider-Pack-x-12-Anthony-Horowitz-9789999656009" target="_blank"><img src="alex.jpg" width="270" height="200" /></a>
+                    <figcaption>Alex Rider Novels</figcaption><br />
+                    <a href="https://www.amazon.co.uk/Collection-Anthony-Horowitz-Necropolis-Oblivion/dp/1406354058" target="_blank"><img src="hongkong.jpg" /></a>
+                    <figcaption>The Power of Five Novels</figcaption><br />
+                </div>   
+                    <div>
+                        <label id="lblTnc">I Agree to the Terms and Conditions of this programme</label>
+                        <input type="checkbox" id="cbTnc" />
+                    </div><br />
+                    <div>
+                        <button onclick="myFunction()">Submit</button>
+                        <button type="reset" id="btnReset">Cancel</button>
+                    </div>
+</form>
+    <p>Thank You!</p>
+</body>
+</html>
