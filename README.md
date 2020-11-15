@@ -1,3 +1,2 @@
-# haha hi
-## you have been hoodwinked
-## dont care about the license
+# hi these are some of my projects and clones of web pages
+
