@@ -1,2 +1,3 @@
-# hi these are some of my projects and clones of web pages
+# Hi!
+## I am Srujan and I design Clones of websites and some project works
 
